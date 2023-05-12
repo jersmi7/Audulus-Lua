@@ -1,0 +1,22 @@
+-- Center text to Canvas window
+
+-- use an input k for a knob to center numbers 1-16 to the center of canvas
+
+-- get canvas w/h from node settings
+w = canvas_width
+h = canvas_height
+
+-- scale text
+size = 1.5
+
+scale{size,size}
+
+min, max = text_bounds(math.floor(k*15.99)+1)
+
+-- from center subtract half the bounding box size
+-- scale effects everything so divide by the scale factor
+-- offset to account for font (anodina)
+
+translate{(w/2-max[1]/2)/size-2, (h/2-max[2]/2)/size-1}
+
+text(math.floor(k*15.99)+1, theme.text)
