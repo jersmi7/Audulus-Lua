@@ -25,7 +25,7 @@ min, max = text_bounds(number)
 -- From center subtract half the bounding box size
 -- Divide by size to account for scaling
 -- Offset (to account for font)
-translate{(w/2-max[1]/2)/size-xOffset, (h/2-max[2]/2)/size-yOffset}
+translate{ (w/2 - max[1]/2) / size + xOffset, (h/2 - max[2]/2) / size + yOffset }
 
 text(number, theme.text)
 restore()
