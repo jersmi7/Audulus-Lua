@@ -8,20 +8,11 @@ number = math.floor(k*15.99)+1
 w = canvas_width
 h = canvas_height
 
--- Center to canvas window (do this first)
-translate{width/2, height/2}
+translate{width/2, height/2} -- Set origin to center of canvas window (do this first)
 
--- Save/restore: transforms only apply to this text
--- (for using in a canvas node with other stuff)
-save()
--- Scale text (do this next)
-scale{1.5, 1.5}
-
--- Text bounding box size in pixels
-min, max = text_bounds(number)
-
--- Center the text
-translate{-max[1]/2, -max[2]/2}
-
+save() -- Save/restore: transforms only apply to what's between
+scale{1.5, 1.5} -- Scale text
+min, max = text_bounds(number) -- Text bounding box size in pixels
+translate{-max[1]/2, -max[2]/2} -- Center the text
 text(number, theme.text)
 restore()
