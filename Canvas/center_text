@@ -13,6 +13,6 @@ translate{width/2, height/2} -- Set origin to center of canvas window (do this f
 save() -- Save/restore: transforms only apply to what's between
 scale{1.5, 1.5} -- Scale text
 min, max = text_bounds(number) -- Text bounding box size in pixels
-translate{-max[1]/2, -max[2]/2} -- Center the text
+translate{-max[1]/2, -max[2]/2} -- Center the text by shifting the lower left corner
 text(number, theme.text)
 restore()
