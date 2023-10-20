@@ -1,4 +1,7 @@
-# Audulus Lua
+# Lua for Audulus
+
+https://audulus.com/img/Audulus_logo.svg
+
 This is a collection of Lua for Audulus. 
 
 Audulus has two Lua-based nodes, the DSP node and the Canvas node. 
