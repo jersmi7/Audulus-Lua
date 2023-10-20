@@ -1,6 +1,6 @@
 # Lua for Audulus
 
-https://audulus.com/img/Audulus_logo.svg
+[[https://audulus.com/img/Audulus_logo.svg]]
 
 This is a collection of Lua for Audulus. 
 
