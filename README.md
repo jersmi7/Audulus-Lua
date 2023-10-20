@@ -5,11 +5,11 @@ Audulus has two Lua-based nodes, the DSP node and the Canvas node.
 DSP node processes audio and control rate signals.
 Canvas node draws vector graphics using the Audulus graphics library, vger.
 
-# DSP node
+## DSP node
 
 For processing audio, synthesis, filters, anything requiring sample rate processing,
 we process each audio frame (where a frame is the length of one sample) using the frames loop:
-```
+```lua
 function process(frames)
   for i = 1, frames do
       -- assuming you made a function called processAudio()
@@ -23,7 +23,7 @@ end
 A block is like an audio buffer, the difference being that, depending on how you are using Audulus, as a standalone app or as an AUv3 plugin, block size can dynamically change depending on your audio host. (Not a big deal for almost everything, just happens in the background.)
 
 For control rate signal - and a significant CPU savings compared to processing at audio frame rate - we can process at block rate using `fill()` instead of the frames loop. This approach fills each block with a constant:
-```
+```lua
 function process(frames)
   -- assuming you made a function called controlSignal()
     fill(output, controlSignal())
@@ -31,7 +31,7 @@ end
 ```
 
 
-# Canvas node
+## Canvas node
 
 The canvas node list of functions and global constants:
 ```
