@@ -5,6 +5,8 @@
  
 # Lua Scripts for Audulus
 
+A small collection of Lua scripts for Audulus.
+
 Audulus has two Lua-based nodes, the DSP node and the Canvas node. 
 DSP node processes audio and control rate signals.
 Canvas node draws vector graphics using the Audulus graphics library, vger.
