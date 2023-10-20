@@ -1,4 +1,5 @@
- <img src="https://audulus.com/img/Audulus_logo.svg">
+![1510985626_audulus](https://github.com/jersmi7/Audulus-Lua/assets/90596774/0ff2d12f-a238-4aed-a1a5-83c9ed7d8254)
+
  
 # Lua for Audulus
 
