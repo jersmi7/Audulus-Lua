@@ -3,9 +3,7 @@
 
 
  
-# Lua for Audulus
-
-This is a collection of Lua for Audulus. 
+# Lua Scripts for Audulus
 
 Audulus has two Lua-based nodes, the DSP node and the Canvas node. 
 DSP node processes audio and control rate signals.
