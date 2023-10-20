@@ -1,5 +1,8 @@
 -- Sample and hold with state saving
 
+-- Inputs: value trigger
+-- Output: output
+
 
 local prev_trigger = 0
 loadState = false
