@@ -12,7 +12,7 @@ we process each audio frame (where a frame is the length of one sample) using th
 ```
 function process(frames)
   for i = 1, frames do
-      -- this assumes you made a function called processAudio()
+      -- assuming you made a function called processAudio()
     output[i] = processAudio()
   end
 end
@@ -25,8 +25,8 @@ A block is like an audio buffer, the difference being that, depending on how you
 So for control rate signal - and a significant CPU savings compared to processing at audio frame rate - we can process at block rate using `fill()` instead of the frames loop. This approach fills each block with a constant:
 ```
 function process(frames)
-  -- this assumes you made a function called control()
-    fill(output, control())
+  -- assuming you made a function called controlSignal()
+    fill(output, controlSignal())
 end
 ```
 
