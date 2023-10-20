@@ -1,5 +1,5 @@
 
-![Audulus-logo-128](https://github.com/jersmi7/Audulus-Lua/assets/90596774/79a79b0d-e5b7-4f02-8e23-56195ffc0a96)
+![Audulus-logo-128](https://github.com/jersmi7/Audulus-Lua/assets/90596774/1eb20250-2449-4ffe-a910-54dc79fc5c4e)
 
 
  
