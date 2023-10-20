@@ -1,5 +1,8 @@
 -- Takeover, with memory
 
+-- Inputs: A B
+-- Output: current
+
 
 local prev_A = 0
 local prev_B = 0
