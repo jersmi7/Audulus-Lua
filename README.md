@@ -22,7 +22,7 @@ end
 
 A block is like an audio buffer, the difference being that, depending on how you are using Audulus, as a standalone app or as an AUv3 plugin, block size can dynamically change depending on your audio host. (Not a big deal for almost everything, just happens in the background.)
 
-So for control rate signal - and a significant CPU savings compared to processing at audio frame rate - we can process at block rate using `fill()` instead of the frames loop. This approach fills each block with a constant:
+For control rate signal - and a significant CPU savings compared to processing at audio frame rate - we can process at block rate using `fill()` instead of the frames loop. This approach fills each block with a constant:
 ```
 function process(frames)
   -- assuming you made a function called controlSignal()
