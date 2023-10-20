@@ -1,5 +1,6 @@
 
-![Screenshot 2023-10-19 at 10 15 38 PM@0 5x](https://github.com/jersmi7/Audulus-Lua/assets/90596774/1e7cab62-d4c5-4e74-8ecd-d72d3cecf9f3)
+![Audulus-logo-128](https://github.com/jersmi7/Audulus-Lua/assets/90596774/79a79b0d-e5b7-4f02-8e23-56195ffc0a96)
+
 
  
 # Lua for Audulus
