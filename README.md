@@ -34,7 +34,7 @@ end
 ## Canvas node
 
 The canvas node list of functions and global constants:
-```
+```lua
 paint = color_paint(r, g, b, a)
 paint = linear_gradient({start_x, start_y}, {end_x, end_y}, r, g, b, a, r, g, b, a)
 fill_circle({x, y}, radius, paint)
@@ -63,7 +63,7 @@ canvas_height
 
 Audulus has a design color scheme represented by r,g,b,a "theme" colors. For example:
 
-```
+```lua
 azure = theme.azureHighlight
 green = theme.greenHighlight
 red = theme.redHighlight
