@@ -5,10 +5,9 @@
 -- Outputs: a1 a2 a3 b1 b2
 
 
--- This code outputs the filter coefficients to use with the Audulus biquad node. 
--- All controls are at control rate. This is the most CPU efficient way thus far to implement biquad filters. 
--- The caveat is that sliders are updatng at block rate (not audio rate), which could mean some zippering, 
--- for ex., with fast modulation. In practice it works very well for most scenarios.
+-- This code outputs biquad filter coefficients. 
+-- Connect outputs directly to the Audulus biquad node. 
+-- This version outputs at block rate for CPU efficiency.
 
 
 SR = sampleRate
