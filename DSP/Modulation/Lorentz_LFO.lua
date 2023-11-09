@@ -1,9 +1,12 @@
 -- Lorenz Attractor LFO. 
--- Classic ever-evolving chaotic system
+-- A classic chaotic system.
 
 -- Inputs: Rate Scale Reset
 -- Outputs: X Y Z time
 
+
+-- For example, Lorenz attractors 
+-- are associated with weather patterns.
 
 
 function createLorenzLFO()
