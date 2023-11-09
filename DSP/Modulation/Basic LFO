@@ -81,7 +81,7 @@ function process(frames)
     local phasor = timeBase(frames, rate, reset[1], phaseOfst[1])
     local LFO = waveforms[waveIndex](phasor)
     if invert[1] == 1 then LFO = LFO * -1 end
-    local LFO = (LFO * amp[1]) + offset[1]
+    local LFO = (LFO * amp[1]) + (offset[1] * 2 - 1)
     fill(output, LFO)
 end
 
