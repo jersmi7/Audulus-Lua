@@ -1,4 +1,4 @@
--- Second order Anti-derivative Anti-aliasing
+-- Second order Antiderivative Antialiasing
 -- Jerry Smith :: 2023
 -- from https://ccrma.stanford.edu/~jatin/Notebooks/adaa.html
 
