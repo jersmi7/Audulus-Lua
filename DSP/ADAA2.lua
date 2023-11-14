@@ -63,11 +63,20 @@ end
 function process(frames)
     for i = 1, frames do
         local xn = input[i]
+        local y
         if math.abs(xn - x1) < TOL then
-            output[i] = fallback(xn, x2)
+            y = fallback(xn, x2)
         else
-            output[i] = (2.0 / (xn - x2)) * (calcD(xn, x1) - calcD(x1, x2))
+            y = (2.0 / (xn - x2)) * (calcD(xn, x1) - calcD(x1, x2))
         end
+
+        -- Check for NaN or Inf and set output to 0 if true
+        if y ~= y or math.abs(y) == math.huge then
+            output[i] = 0
+        else
+            output[i] = y
+        end
+
         x2 = x1
         x1 = xn
     end
