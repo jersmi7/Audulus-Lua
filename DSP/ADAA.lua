@@ -17,7 +17,7 @@ end
 -- Antiderivative of the hard clipper
 function hardClipAD1(x)
     if math.abs(x) < 1 then
-        return x * x / 2.0
+        return (x * x) / 2.0
     else
         return x * (x > 0 and 1 or -1) - 0.5
     end
