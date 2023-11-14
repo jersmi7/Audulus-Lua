@@ -1,4 +1,4 @@
--- First order ADAA
+-- First order Anti-derivative Anti-aliasing
 -- Jerry Smith :: 2023
 -- from https://ccrma.stanford.edu/~jatin/Notebooks/adaa.html
 
