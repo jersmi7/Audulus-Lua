@@ -41,9 +41,6 @@ function hsv(h,s,v)
 end
 
 
-
-
-
 local function portLight(input, x, y)
 	label = {"A", "G", "M", "S", "O"}
 	
@@ -51,9 +48,9 @@ local function portLight(input, x, y)
 		signal = math.abs(input)
 	
 		if signal >= 0 and signal <= 1 then
-			r = smoothstep(.4,1,input)
-			g = math.sin(input*math.pi)
-			b = math.sin(input*4*math.pi/2)
+			r = smoothstep(.4, 1, signal)
+			g = math.sin(signal * math.pi)
+			b = math.sin(signal * 4 * math.pi/2)
 			a = 1
 		elseif signal > 1 then
 			r,g,b = 1,0,0
@@ -64,8 +61,8 @@ local function portLight(input, x, y)
 	elseif type == 2 then -- gate light
 		-- behavior of Audulus light meter
 		if input > 0 then
-			r,g,b,a = 0.0,0.831,1,1
-			text_color = {.5,.5,.5,1}
+			r,g,b,a = 0.0, 0.831, 1, 1
+			text_color = {0.5, 0.5, 0.5, 1}
 		else
 			r,g,b,a = 0,0,0,1
 			text_color = theme.text
@@ -78,7 +75,7 @@ local function portLight(input, x, y)
 			b = 0
 			a = 1
 		elseif input > 1 then -- saturate alpha if > 1
-			r,g,b,a = 1, .1, 0, math.abs(input)
+			r,g,b,a = 1, 0.1, 0, math.abs(input)
 		
 		elseif input <= 0 and input >= -1 then
 			r = math.abs(input*.2)
