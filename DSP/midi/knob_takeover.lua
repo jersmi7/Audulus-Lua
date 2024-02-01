@@ -28,7 +28,6 @@ function process(frames)
         readState = false
     end
 
-	
 	if type == "immediate" then
 		if A[1] ~= prev_A then
     		controlA = true   	
@@ -57,7 +56,7 @@ function process(frames)
     	local targetValue = controlA and A[1] or B[1]
     	local knobMoved = false
 
-	    if A[1] ~= prev_A then
+	   	if A[1] ~= prev_A then
     	    controlA = true
         	knobMoved = true
     	elseif B[1] ~= prev_B then
@@ -71,7 +70,7 @@ function process(frames)
         	currentValue = currentValue + delta
         	saveState = true
     	end   
-    end
+   	end
 
 
     fill(output, currentValue)
