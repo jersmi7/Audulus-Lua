@@ -1,4 +1,4 @@
--- Basic counter
+-- Basic Counter
 -- Jerry Smith :: 2024
 
 -- Input: trigger
